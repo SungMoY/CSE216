@@ -1,0 +1,31 @@
+what should the difference between setPosition and the constructor of each shape class be?
+	should the constructor check for validity like setPosition does?
+	Or is it okay if the first instantiation of an shape accepts invalid coords?
+
+
+so the setPosition method in each shape class should throw an illegalargumentException eerror
+but should the constructors too? Or should we allow invalid coords initially create an instance of shape and onl
+
+Is the following correct:
+	For setPosition in Circle, I'll first check if the input does not consist of TwoDPoint objects
+	Then I use isMember to determine if the input is valid or not.
+
+
+Could you clarify this for me? This is how I currently handle this:
+	In the circle class, isMember makes sure the input list has only one element.
+	But setPosition in the circle class disregards this and works even if the input has more than one element.
+
+	This is how I currently handle this:
+	And so the workaround this is to create a temporary list composed of only the first element of the input list from setPosition
+		and then call isMember on that temporary list.
+
+
+Make sure order of coords for Triangle is correct
+
+
+make sure i get the relationship between comparable (has its own compareTo override method) and comparator (creates a static method
+	to use as the comparison)
+
+Do you have certain methods or ways to do all the coordinate geometry? It feels like the homework more testing how well I can research
+formulas and come up with methods than it is about polymorphism. And i've spent more time doing those things than actually testing
+polymorphism and comparable and comparator
